@@ -4,10 +4,12 @@ import './styleuga.scss'; // Importe o arquivo SCSS aqui
 const Uga = () => {
   return (
     <>
-      <div className="text">
+      {/* <div className="text">
         <p>404</p>
-      </div>
+      </div> */}
       <div className="container">
+        <div>
+
         <div className="caveman">
           <div className="leg">
             <div className="foot">
@@ -60,13 +62,7 @@ const Uga = () => {
           </div>
         </div>
       </div>
-
-      <a href="https://codepen.io/SofiaSergio/" target="_blank">
-        <div id="link">
-          <i className="fab fa-codepen"></i>
-          <p>watch other pens</p>
         </div>
-      </a>
     </>
   );
 };

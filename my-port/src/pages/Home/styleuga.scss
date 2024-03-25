@@ -1,6 +1,5 @@
 
 body {
-  background-color: #ff7f2e;
   font-family: "Concert One", cursive;
   margin: 0;
   overflow: hidden;
@@ -9,15 +8,15 @@ body {
 
 /*/////////////////// rules */
 $color-black: #13242c;
-$color-white: #fff;
-$color-red-1: #d13433;
-$color-red-2: #932422;
-$color-skin-1: #eab08c;
-$color-skin-2: #d9766c;
-$color-skin-3: #b2524d;
-$color-hair: #13242c;
-$color-wood-1: #601513;
-$color-wood-2: #410a09;
+$color-white:rgba($color-black, 0.5);
+$color-red-1: rgba($color-black, 0.5);
+$color-red-2:rgba($color-black, 0.5);
+$color-skin-1:rgba($color-black, 0.5);
+$color-skin-2: rgba($color-black, 0.5);
+$color-skin-3:  rgba($color-black, 0.5);
+$color-hair:  rgba($color-black, 0.5);
+$color-wood-1:  rgba($color-black, 0.5);
+$color-wood-2:rgba($color-black, 0.5);
 
 @mixin position {
   position: absolute;
@@ -40,31 +39,43 @@ $color-wood-2: #410a09;
 }
 
 /*/////////////////// scene */
-.text {
-  @include centered;
-  color: rgba($color-black, 0.1);
-  font-size: 30em;
-  text-align: center;
-  top: 40%;
-  height: auto
-}
+// .text {
+//   @include centered;
+//   color: rgba($color-black, 0.1);
+//   font-size: 30em;
+//   text-align: center;
+//   top: 40%;
+//   @media (max-width: 768px) { // Oculta o container em telas menores que 768px de largura
+//     display: none;
+//   }
+// }
 .container {
-  @include centered;
-  height: auto;
+  @include position();
   height: 300px;
   width: 500px;
-  &:after {
-    @include position;
-    content: "";
-    background-color: rgba($color-black, 0.1);
-    border-radius: 12px;
-    bottom: 40px;
-    height: 12px;
-    left: 80px;
-    width: 350px;
-    z-index: -1;
+display: flex;
+  background-color: rgba($color-black, 0.0); // Define o plano de fundo semi-transparente
+  // position: relative; // Adiciona posição relativa para que os elementos absolutos fiquem dentro do container
+  // &:after {
+  //   @include position;
+  //   content: "";
+  //   border-radius: 12px;
+  //   bottom: 40px;
+  //   height: 12px;
+  //   left: 80px;
+  //   width: 350px;
+  //   // z-index: -1;
+  //   background-color: rgba($color-black, 0.1); // Define o plano de fundo semi-transparente para o pseudo-elemento
+  // }
+  // @media (max-width: 768px) { // Oculta o container em telas menores que 768px de largura
+  //   display: none;
+  // }
+  // Seletor para os elementos filhos
+  & > * {
+    background-color: rgba($color-white, 0.5); // Define o plano de fundo semi-transparente para os elementos filhos
   }
 }
+
 /*/////////////////// caveman */
 .caveman {
   height: 300px;
@@ -130,6 +141,7 @@ $color-wood-2: #410a09;
     }
     .nose {
       @include centered;
+     
       background-color: $color-skin-2;
       border-left: 8px solid rgba($color-black, 0.1);
       border-radius: 10px;
@@ -155,7 +167,7 @@ $color-wood-2: #410a09;
     width: 60px;
     &:after,
     &:before {
-      content: "";
+      content: "erro";
       @include position;
       border-radius: 50%;
       height: 20px;

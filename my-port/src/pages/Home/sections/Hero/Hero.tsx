@@ -10,25 +10,25 @@ const Hero = () => {
     backgroundColor: theme.palette.primary.main,
     height: "100vh",
     display: "flex",
-    alignItems:"center"
+    alignItems:"center",
   }));
 
   const StyledImg = styled("img")(() => ({
-    width: "100%",
+    width: "90%",
     borderRadius: "50%",
-    border: `1px solid ${theme.palette.primary.contrastText}`
+    border: `2px solid ${theme.palette.primary.contrastText}`
   }));
 
   return (
     <>
-      <Uga  />
+ 
       <StyledHero>
         <Container maxWidth="lg">
           <Grid container spacing={2}>
             <Grid item xs={12} md={4}>
               <StyledImg src={Avatar} />
             </Grid>
-            <Grid item xs={12} md={8}>
+            <Grid item xs={12} md={8} >
               <Typography
                 color="primary.contrastText"
                 variant="h1"
@@ -71,6 +71,13 @@ const Hero = () => {
                     Download CV
                     </Typography>
                   </StyledButton>
+                </Grid>
+                <Grid                   item
+                  xs={12}
+                  md={8}
+                  display="flex"
+                  justifyContent="center">
+                <Uga  />
                 </Grid>
               </Grid>
             </Grid>
