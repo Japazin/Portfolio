@@ -1,5 +1,5 @@
 import Avatar from "../../../../assets/img/WhatsApp Image 2024-02-29 at 21.34.12_8c6060b7.jpg";
-import { Box, Container, Grid, Typography, styled } from "@mui/material";
+import {Container, Grid, Typography, styled } from "@mui/material";
 import GetAppIcon from "@mui/icons-material/GetApp";
 import MailIcon from "@mui/icons-material/Mail";
 import StyledButton from "../../../../components/StyleButton/StyleButton";
