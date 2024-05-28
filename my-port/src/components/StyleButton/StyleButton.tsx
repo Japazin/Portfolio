@@ -18,13 +18,9 @@ const StyledButton: React.FC<StyleButtonProps> = ({children}) => {
     display:"inline-flex",
     alignItems: "center",
     justifyContent: "center",
-    textDecoration: "none",
     gap: "15px",
-    color: theme.palette.primary.contrastText,
-    '&:hover':{
-        backgroundColor: theme.palette.secondary.light
-    },
-    
+    cursor:"pointer",
+    color: theme.palette.primary.contrastText, 
   }));
   return (
     <>

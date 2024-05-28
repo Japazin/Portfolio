@@ -1,10 +1,11 @@
 import Avatar from "../../../../assets/img/WhatsApp Image 2024-02-29 at 21.34.12_8c6060b7.jpg";
-import {Container, Grid, Typography, styled } from "@mui/material";
+import {Box, Container, Grid, Typography, styled } from "@mui/material";
 import GetAppIcon from "@mui/icons-material/GetApp";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import StyledButton from "../../../../components/StyleButton/StyleButton";
 import theme from "../../../../theme";
-import Uga from "../../uga";
+import { AnimatedBackground } from "../../Background/Background";
+
 const Hero = () => {
   const StyledHero = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
@@ -28,10 +29,17 @@ const Hero = () => {
       <StyledHero>
         <Container maxWidth="lg">
           <Grid container spacing={2}>
-            <Grid item xs={12} md={4}>
-              <StyledImg src={Avatar} />
-            </Grid>
-            <Grid item xs={12} md={8}  >
+        <Grid item xs={12} md={5}>
+                            <Box position="relative">
+                                <Box position="absolute" width={"150%"} top={-100} right={-100}>
+                                    <AnimatedBackground />
+                                </Box>
+                                <Box position="relative" textAlign="center">
+                                    <StyledImg src={Avatar} />
+                                </Box>
+                            </Box>
+                        </Grid>
+            <Grid item xs={12} md={7}  >
               <Typography
                 color="primary.contrastText"
                 variant="h2"
@@ -57,7 +65,7 @@ const Hero = () => {
                   <StyledButton>
                   <WhatsAppIcon />
                    <Typography>
-                  <LinkContato href="https://wa.me/5531998393549" >  Contact me</LinkContato> 
+                  <LinkContato href="https://wa.me/5531998393549"> Contact me</LinkContato> 
                    </Typography>
                   </StyledButton>
                 </Grid>
@@ -72,14 +80,7 @@ const Hero = () => {
                     <LinkContato href="https://drive.google.com/file/d/1ZKT1MqSK45uCDMuq6eFydv5C_6gNP52T/view?usp=drive_link"  >  Contact me</LinkContato> 
                     </Typography>
                   </StyledButton>
-                </Grid>
-                <Grid                   item
-                  xs={12}
-                  md={8}
-                  display="flex"
-                  justifyContent="center">
-                <Uga  />
-                </Grid>
+                </Grid>  
               </Grid>
             </Grid>
           </Grid>
