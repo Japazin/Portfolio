@@ -31,11 +31,12 @@ const Hero = () => {
             <Grid item xs={12} md={4}>
               <StyledImg src={Avatar} />
             </Grid>
-            <Grid item xs={12} md={8} >
+            <Grid item xs={12} md={8}  >
               <Typography
                 color="primary.contrastText"
-                variant="h1"
+                variant="h2"
                 textAlign="center"
+                
               >
                 Mateus Felipe
               </Typography>
@@ -46,13 +47,12 @@ const Hero = () => {
               >
                 I'm a Software Engineer
               </Typography>
-              <Grid container display="flex" justifyContent="center" spacing={3}>
+              <Grid container display="flex" justifyContent="center" spacing={3} marginTop={2}>
                 <Grid
                   item
-                  xs={12}
-                  md={4}
                   display="flex"
                   justifyContent="center"
+
                 >
                   <StyledButton>
                     <MailIcon />
@@ -63,8 +63,6 @@ const Hero = () => {
                 </Grid>
                 <Grid
                   item
-                  xs={12}
-                  md={4}
                   display="flex"
                   justifyContent="center"
                 >
