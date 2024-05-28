@@ -1,7 +1,7 @@
 import Avatar from "../../../../assets/img/WhatsApp Image 2024-02-29 at 21.34.12_8c6060b7.jpg";
 import {Container, Grid, Typography, styled } from "@mui/material";
 import GetAppIcon from "@mui/icons-material/GetApp";
-import MailIcon from "@mui/icons-material/Mail";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import StyledButton from "../../../../components/StyleButton/StyleButton";
 import theme from "../../../../theme";
 import Uga from "../../uga";
@@ -55,7 +55,7 @@ const Hero = () => {
 
                 >
                   <StyledButton>
-                    <MailIcon />
+                  <WhatsAppIcon />
                    <Typography>
                   <LinkContato href="https://wa.me/5531998393549" >  Contact me</LinkContato> 
                    </Typography>
