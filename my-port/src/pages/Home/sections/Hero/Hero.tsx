@@ -18,7 +18,10 @@ const Hero = () => {
     borderRadius: "50%",
     border: `2px solid ${theme.palette.primary.contrastText}`
   }));
-
+  const LinkContato = styled("a")`
+  text-decoration: none;
+  color: inherit;
+`;
   return (
     <>
  
@@ -54,7 +57,7 @@ const Hero = () => {
                   <StyledButton>
                     <MailIcon />
                    <Typography>
-                      Contact me
+                  <LinkContato href="https://wa.me/5531998393549" >  Contact me</LinkContato> 
                    </Typography>
                   </StyledButton>
                 </Grid>
@@ -68,7 +71,7 @@ const Hero = () => {
                   <StyledButton>
                     <GetAppIcon />
                     <Typography>
-                    Download CV
+                    <LinkContato href="https://drive.google.com/file/d/1ZKT1MqSK45uCDMuq6eFydv5C_6gNP52T/view?usp=drive_link"  >  Contact me</LinkContato> 
                     </Typography>
                   </StyledButton>
                 </Grid>

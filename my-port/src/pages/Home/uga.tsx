@@ -1,12 +1,9 @@
-import React from 'react';
+
 import './styleuga.scss'; // Importe o arquivo SCSS aqui
 
 const Uga = () => {
   return (
     <>
-      {/* <div className="text">
-        <p>404</p>
-      </div> */}
       <div className="container">
         <div>
 
