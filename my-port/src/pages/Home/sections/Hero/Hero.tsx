@@ -77,7 +77,7 @@ const Hero = () => {
                   <StyledButton>
                     <GetAppIcon />
                     <Typography>
-                    <LinkContato href="https://drive.google.com/file/d/1ZKT1MqSK45uCDMuq6eFydv5C_6gNP52T/view?usp=drive_link"  >  Contact me</LinkContato> 
+                    <LinkContato href="https://drive.google.com/file/d/1ZKT1MqSK45uCDMuq6eFydv5C_6gNP52T/view?usp=drive_link"  >Download CV</LinkContato> 
                     </Typography>
                   </StyledButton>
                 </Grid>  
