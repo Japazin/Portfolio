@@ -51,9 +51,9 @@ const Hero = () => {
               <Typography
                 color="primary.contrastText"
                 variant="h2"
-                textAlign="center"
+                textAlign="center" 
               >
-                I'm a Software Engineer
+               Desenvolvedor Full Stack Junior
               </Typography>
               <Grid container display="flex" justifyContent="center" spacing={3} marginTop={2}>
                 <Grid
