@@ -7,9 +7,30 @@
   overflow: hidden;
   background-image: linear-gradient(45deg, #040404, #000000);
   font-family: "Poppins", sans-serif;
-  padding: 80px;
+  padding: 40px;
 }
-
+@media (max-width: 768px) {
+  .carrosel-geral {
+    
+    max-width: 16rem; /* máximo de 400px */
+    max-height: 30rem; /* máximo de 400px */
+  }
+  .cartao h2 {
+    text-align: center;
+    font-size: 20rem;
+    font-weight: bold;
+    margin: 0 0 0.7em;
+    color: #2a2f37;
+    
+  }
+  .cartao p,
+  .cartao h2 {
+    transition: all 0.3s ease-out;
+    opacity: var(--ativo);
+    user-select: none;
+  }
+  
+}
 * {
   box-sizing: border-box;
 }
@@ -46,7 +67,7 @@
 }
 
 .conteudo-geral:nth-child(1) .cartao {
-  background: linear-gradient(-229deg, #12dd3e, #54354a);
+  background: linear-gradient(-229deg, #12dd3e, #80d0ab);
 }
 
 .conteudo-geral:nth-child(2) .cartao {
@@ -67,12 +88,11 @@
 
 .conteudo-geral:nth-child(6) .cartao {
   background: linear-gradient(-229deg, #d9afd9, #97d9e1);
-  color: #000000;
 }
 
 .cartao h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin: 0 0 0.7em;
   color: #2a2f37;
