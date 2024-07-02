@@ -1,11 +1,13 @@
 import { Grid, Typography } from "@mui/material";
 import Style from "./SobreCss.module.css";
+import { AppSlider } from "./SliderProjects/AppSlider";
 export const Project = () => {
   return (
     <>
       <Typography>
         {" "}
         <Grid>
+          <AppSlider />
           <Typography>
             <div className={Style.portfolio}>
               <h1>Portfólio de Desenvolvedor</h1>
@@ -38,6 +40,7 @@ export const Project = () => {
                   </li>
                 </ul>
               </div>
+              
             </div>
           </Typography>
         </Grid>
