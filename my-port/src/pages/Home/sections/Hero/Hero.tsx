@@ -15,7 +15,7 @@ const Hero = () => {
   }));
 
   const StyledImg = styled("img")(() => ({
-    width: "90%",
+    width: "70%",
     borderRadius: "50%",
     border: `2px solid ${theme.palette.primary.contrastText}`
   }));
@@ -31,9 +31,9 @@ const Hero = () => {
           <Grid container spacing={2}>
         <Grid item xs={12} md={5}>
                             <Box position="relative">
-                                <Box position="absolute" width={"150%"} top={-100} right={-100}>
+                                
                                     <AnimatedBackground />
-                                </Box>
+                              
                                 <Box position="relative" textAlign="center">
                                     <StyledImg src={Avatar} />
                                 </Box>

@@ -4,7 +4,7 @@ import { Project } from "./sections/Sobre/Project";
 const Home = () => {
   return (
     <>
-     {/* <Navbar/> */}
+     <Navbar/>
       <Hero />
       <Project />
     </>

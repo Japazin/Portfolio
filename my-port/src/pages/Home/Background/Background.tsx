@@ -1,14 +1,14 @@
 import { Box } from "@mui/material"
+import "./svgcss.css"
 
 export const AnimatedBackground = () => {
     return (
-        <Box >
-            <svg 
-            className="BgAnimation__svg"
-            viewBox="0 0 602 602"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
+        <Box>
+            <svg
+                className="svg-animation"
+                viewBox="0 0 602 602"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
             >
                 <g opacity="0.15">
                     <path
