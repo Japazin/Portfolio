@@ -42,17 +42,18 @@
   padding: 2rem;
   background-color: hsl(200deg, 40%, calc(100% - var(--abs-compensacao) * 50%));
   border-radius: 1rem;
-  color: #575a60;
+  color: #d1d1d3;
   text-align: justify;
   transition: all 0.3s ease-out;
 }
 
-/* .conteudo-geral:nth-child(1) .cartao {
-  background: linear-gradient(-229deg, #0093e9, #80d0c7);
+.conteudo-geral:nth-child(1) .cartao {
+  background: linear-gradient(-229deg, #12dd3e, #80d0ab);
 }
 
 .conteudo-geral:nth-child(2) .cartao {
-  background: linear-gradient(-229deg, #00dbde, #fc00ff);
+  background: linear-gradient(-229deg, #00ff44, #000000);
+  
 }
 
 .conteudo-geral:nth-child(3) .cartao {
@@ -63,12 +64,12 @@
 }
 
 .conteudo-geral:nth-child(5) .cartao {
-  background: linear-gradient(-229deg, #642b73, #c6426e);
+  background: linear-gradient(-229deg, #46314c, #c6426e);
 }
 
 .conteudo-geral:nth-child(6) .cartao {
   background: linear-gradient(-229deg, #d9afd9, #97d9e1);
-} */
+}
 
 .cartao h2 {
   text-align: center;
