@@ -5,7 +5,7 @@ import AppSlider from "./SliderProjects/AppSlider";
 export const Project: React.FC = () => {
   return (
     
-      <Grid>
+      <Grid >
         <AppSlider />
       </Grid>
   );

@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
 .app {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   background-image: linear-gradient(45deg, #040404, #000000);
   font-family: "Poppins", sans-serif;
-  padding: 40px;
+  padding: 80px;
 }
 
 * {
@@ -18,8 +16,8 @@
 
 .carrosel-geral {
   position: relative;
-  width: 23rem;
-  height: 23rem;
+  width: 43rem;
+  height: 43rem;
   perspective: 500px;
   transform-style: preserve-3d;
 }
@@ -48,7 +46,7 @@
 }
 
 .conteudo-geral:nth-child(1) .cartao {
-  background: linear-gradient(-229deg, #12dd3e, #80d0ab);
+  background: linear-gradient(-229deg, #12dd3e, #54354a);
 }
 
 .conteudo-geral:nth-child(2) .cartao {
@@ -69,6 +67,7 @@
 
 .conteudo-geral:nth-child(6) .cartao {
   background: linear-gradient(-229deg, #d9afd9, #97d9e1);
+  color: #000000;
 }
 
 .cartao h2 {

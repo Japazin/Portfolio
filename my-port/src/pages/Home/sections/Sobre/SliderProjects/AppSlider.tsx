@@ -11,24 +11,24 @@ interface CartaoProps {
 
 const CONTEUDO_CARTOES: CartaoProps[] = [
   {
-    titulo: "Programador Node.JS",
+    titulo: "Programador Full Stack",
     conteudo:
       "Ajudando pessoas com o que sei. Segue na base que você vai longe!",
   },
   {
-    titulo: "HTML",
+    titulo: "Node.js",
     conteudo:
-      "HTML é uma linguagem de marcação utilizada na construção de páginas na Web.",
+      "Node.js é um ambiente de execução JavaScript construído no motor JavaScript V8 do Chrome.",
   },
   {
-    titulo: "CSS",
+    titulo: "MongoDB",
     conteudo:
-      "CSS é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em uma linguagem de marcação como HTML.",
+      "MongoDB é um banco de dados NoSQL orientado a documentos.",
   },
   {
-    titulo: "JavaScript",
+    titulo: "AWS S3",
     conteudo:
-      "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multi-paradigma.",
+      "AWS S3 é um serviço de armazenamento de objetos oferecido pela Amazon Web Services.",
   },
   {
     titulo: "React",
@@ -57,19 +57,16 @@ const Carrosel: React.FC<CarroselProps> = ({ children }) => {
   const [atualAtivo, setAtualAtivo] = useState(0);
   const TOTAL_DE_CARDS = CONTEUDO_CARTOES.length;
 
-  const handleNext = () => {
-    setAtualAtivo((prev) => (prev + 1) % TOTAL_DE_CARDS);
-  };
-
-  const handlePrev = () => {
-    setAtualAtivo((prev) => (prev - 1 + TOTAL_DE_CARDS) % TOTAL_DE_CARDS);
-  };
-
   return (
     <div className="carrosel-geral">
-      <button className="navegacao esquerda" onClick={handlePrev}>
-        <TiChevronLeftOutline />
-      </button>
+      {atualAtivo > 0 && (
+        <button
+          className="navegacao esquerda"
+          onClick={() => setAtualAtivo((i) => i - 1)}
+        >
+          <TiChevronLeftOutline />
+        </button>
+      )}
       {Children.map(children, (elementoFilho, i) => (
         <div
           className="conteudo-geral"
@@ -89,9 +86,14 @@ const Carrosel: React.FC<CarroselProps> = ({ children }) => {
           {elementoFilho}
         </div>
       ))}
-      <button className="navegacao direita" onClick={handleNext}>
-        <TiChevronRightOutline />
-      </button>
+      {atualAtivo < TOTAL_DE_CARDS - 1 && (
+        <button
+          className="navegacao direita"
+          onClick={() => setAtualAtivo((i) => i + 1)}
+        >
+          <TiChevronRightOutline />
+        </button>
+      )}
     </div>
   );
 };
