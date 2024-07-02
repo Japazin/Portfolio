@@ -53,7 +53,7 @@ const Hero = () => {
                 variant="h2"
                 textAlign="center" 
               >
-               Desenvolvedor Full Stack Junior
+               Desenvolvedor Full Stack
               </Typography>
               <Grid container display="flex" justifyContent="center" spacing={3} marginTop={2}>
                 <Grid
