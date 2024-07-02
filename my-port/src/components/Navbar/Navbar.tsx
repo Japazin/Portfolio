@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <AppBar position="absolute">
       <StyledToobar>
-        <StyledMenuItem>Sobres</StyledMenuItem>
+        <StyledMenuItem>Sobre</StyledMenuItem>
         <StyledMenuItem>Habilidades</StyledMenuItem>
         <StyledMenuItem>Projetos</StyledMenuItem>
       </StyledToobar>
