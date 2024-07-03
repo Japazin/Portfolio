@@ -9,7 +9,7 @@ const StyledToobar = styled(Toolbar)({
 });
 
 const StyledMenuItem = styled(MenuItem)({
-  color: "white", 
+  color: " white", 
   transition: "color 0.3s", 
   '&:hover': {
     color: "grey", 

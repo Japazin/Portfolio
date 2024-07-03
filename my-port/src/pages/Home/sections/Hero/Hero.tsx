@@ -12,6 +12,7 @@ const Hero = () => {
     height: "100vh",
     display: "flex",
     alignItems:"center",
+    
   }));
 
   const StyledImg = styled("img")(() => ({
@@ -42,16 +43,17 @@ const Hero = () => {
             <Grid item xs={12} md={7}  >
               <Typography
                 color="primary.contrastText"
-                variant="h2"
+                variant="h3"
                 textAlign="center"
                 
               >
                 Mateus Felipe
               </Typography>
               <Typography
-                color="primary.contrastText"
-                variant="h2"
+                color="#f96262fb"
+                variant="h3"
                 textAlign="center" 
+                
               >
                Desenvolvedor Full Stack
               </Typography>
