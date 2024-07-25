@@ -5,6 +5,8 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import StyledButton from "../../../../components/StyleButton/StyleButton";
 import theme from "../../../../theme";
 import { AnimatedBackground } from "../../Background/Background";
+import Project from "../Sobre/Project";
+import Navbar from "../../../../components/Navbar/Navbar";
 
 const Hero = () => {
   const StyledHero = styled("div")(({ theme }) => ({
@@ -26,7 +28,7 @@ const Hero = () => {
 `;
   return (
     <>
- 
+ <Navbar/>
       <StyledHero>
         <Container maxWidth="lg">
           <Grid container spacing={2}>
@@ -88,6 +90,7 @@ const Hero = () => {
           </Grid>
         </Container>
       </StyledHero>
+          <Project />
     </>
   );
 };

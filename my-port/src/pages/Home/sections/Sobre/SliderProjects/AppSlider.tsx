@@ -13,33 +13,14 @@ const CONTEUDO_CARTOES: CartaoProps[] = [
   {
     titulo: "Programador Full Stack",
     conteudo:
-      "Ajudando pessoas com o que sei. Segue na base que você vai longe!",
+      "Olá! Sou Mateus, um desenvolvedor Full Stack apaixonado por tecnologia desde os 14 anos. Minha principal linguagem de programação é JavaScript, com foco em Node.js. Além do desenvolvimento de software, também tenho amplo conhecimento em infraestrutura de computadores. Atualmente, estou me aprofundando em TypeScript e cursando Análise e Desenvolvimento de Sistemas (ADS). Minha experiência prática abrange várias áreas, incluindo AWS, React, Docker, Git e MongoDB. Adoro desafios e estou sempre em busca de novas oportunidades para expandir minhas habilidades e contribuir para projetos inovadores.",
   },
   {
-    titulo: "Node.js",
+    titulo: "Meu Projeto de E-commerce",
     conteudo:
-      "Node.js é um ambiente de execução JavaScript construído no motor JavaScript V8 do Chrome.",
+      "Desenvolvi um projeto de e-commerce utilizando React no front-end e MongoDB de banco de dados no back-end usei Node.JS. Este projeto permite adicionar produtos, realizar vendas e compras, com todas as transações sendo salvas e exibidas em um dashboard. As imagens dos produtos e dos usuários são armazenadas no AWS S3, proporcionando uma solução completa e integrada para gestão de produtos.",
   },
-  {
-    titulo: "MongoDB",
-    conteudo:
-      "MongoDB é um banco de dados NoSQL orientado a documentos.",
-  },
-  {
-    titulo: "AWS S3",
-    conteudo:
-      "AWS S3 é um serviço de armazenamento de objetos oferecido pela Amazon Web Services.",
-  },
-  {
-    titulo: "React",
-    conteudo:
-      "React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.",
-  },
-  {
-    titulo: "GIT",
-    conteudo:
-      "Git é um sistema de controle de versão distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.",
-  },
+ 
 ];
 
 const Cartao: React.FC<CartaoProps> = ({ titulo, conteudo }) => (
@@ -99,7 +80,7 @@ const Carrosel: React.FC<CarroselProps> = ({ children }) => {
 };
 
 export const AppSlider: React.FC = () => (
-  <div className="app">
+  <div className="app" >
     <Carrosel>
       {CONTEUDO_CARTOES.map((cartao, i) => (
         <Cartao key={i} titulo={cartao.titulo} conteudo={cartao.conteudo} />

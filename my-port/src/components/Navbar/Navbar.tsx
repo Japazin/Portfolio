@@ -1,5 +1,5 @@
 
-import { AppBar, MenuItem, Toolbar, styled } from "@mui/material";
+import { AppBar, Link, MenuItem, Toolbar, styled } from "@mui/material";
 
 
 const StyledToobar = styled(Toolbar)({
@@ -8,7 +8,7 @@ const StyledToobar = styled(Toolbar)({
   backgroundColor: "black",
 });
 
-const StyledMenuItem = styled(MenuItem)({
+const StyledMenuItem = styled(Link)({
   color: " white", 
   transition: "color 0.3s", 
   '&:hover': {
@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <AppBar position="absolute">
       <StyledToobar>
-        <StyledMenuItem>Sobre</StyledMenuItem>
+        <StyledMenuItem href="#sobre">Sobre</StyledMenuItem>
         <StyledMenuItem>Habilidades</StyledMenuItem>
         <StyledMenuItem>Projetos</StyledMenuItem>
       </StyledToobar>
