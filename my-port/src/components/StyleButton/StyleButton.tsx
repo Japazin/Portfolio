@@ -13,12 +13,12 @@ const StyledButton: React.FC<StyleButtonProps> = ({children}) => {
       backgroundColor: 'transparent',
       border: `1px solid ${theme.palette.primary.contrastText}`,
       borderRadius: '3px',
-      padding: '5px 15px',
+      
       width: '100%',
       display: 'inline-flex',
       alignItems: 'center',
       justifyContent: 'center',
-      gap: '15px',
+      
       cursor: 'pointer',
       color: theme.palette.primary.contrastText,
       transition: 'background-color 0.3s ease',

@@ -22,10 +22,23 @@ const Hero = () => {
     borderRadius: "50%",
     border: `2px solid ${theme.palette.primary.contrastText}`
   }));
-  const LinkContato = styled("a")`
-  text-decoration: none;
-  color: inherit;
-`;
+  const LinkContato = styled("a")(() => ({
+    backgroundColor: 'transparent',
+    padding: '5px 15px',
+    width: '100%',
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textDecoration: "none",
+   
+    cursor: 'pointer',
+    color: theme.palette.primary.contrastText,
+    
+    '&:hover': {
+      backgroundColor: "white",
+      color: "black",}
+}));
+
   return (
     <>
  <Navbar/>
@@ -67,10 +80,10 @@ const Hero = () => {
 
                 >
                   <StyledButton>
+                  <LinkContato href="https://wa.me/5531998393549">
                   <WhatsAppIcon />
-                   <Typography>
-                  <LinkContato href="https://wa.me/5531998393549"> Contact me</LinkContato> 
-                   </Typography>
+                   <Typography> Contact me
+                   </Typography></LinkContato> 
                   </StyledButton>
                 </Grid>
                 <Grid
@@ -79,10 +92,11 @@ const Hero = () => {
                   justifyContent="center"
                 >
                   <StyledButton>
-                    <GetAppIcon />
+                    <LinkContato  href="https://drive.google.com/file/d/1ZKT1MqSK45uCDMuq6eFydv5C_6gNP52T/view?usp=drive_link" ><GetAppIcon />
                     <Typography>
-                    <LinkContato href="https://drive.google.com/file/d/1ZKT1MqSK45uCDMuq6eFydv5C_6gNP52T/view?usp=drive_link"  >Download CV</LinkContato> 
+                    Download CV 
                     </Typography>
+                    </LinkContato>
                   </StyledButton>
                 </Grid>  
               </Grid>
