@@ -29,8 +29,7 @@ const Hero = () => {
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
-    textDecoration: "none",
-   
+    textDecoration: "none",  
     cursor: 'pointer',
     color: theme.palette.primary.contrastText,
     
@@ -80,7 +79,7 @@ const Hero = () => {
 
                 >
                   <StyledButton>
-                  <LinkContato href="https://wa.me/5531998393549">
+                  <LinkContato href="https://wa.me/5531998393549" target="_blank">
                   <WhatsAppIcon />
                    <Typography> Contact me
                    </Typography></LinkContato> 
@@ -92,7 +91,7 @@ const Hero = () => {
                   justifyContent="center"
                 >
                   <StyledButton>
-                    <LinkContato  href="https://drive.google.com/file/d/1ZKT1MqSK45uCDMuq6eFydv5C_6gNP52T/view?usp=drive_link" ><GetAppIcon />
+                    <LinkContato  href="https://drive.google.com/file/d/1ZKT1MqSK45uCDMuq6eFydv5C_6gNP52T/view?usp=drive_link" target="_blank" ><GetAppIcon />
                     <Typography>
                     Download CV 
                     </Typography>
